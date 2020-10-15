@@ -21,6 +21,7 @@ def index_view(request):
     })
 
 
-def countAdd(self):
-    answer = string_a + string_b
-    return answer
+def countAdd(request):
+    if request.method == 'GET':
+        answer = string_a + string_b
+        return answer
